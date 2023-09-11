@@ -1,0 +1,22 @@
+sort1 uses: Selection sort
+
+How do you know?:
+- Đặc điểm chung: Thuật toán này lặp lại và chọn phần tử nhỏ nhất và đặt nó ở vị trí thích hợp.
+- Độ phức tạp thời gian: O(n^2), vì phải thực hiện nhiều lần lặp.
+- Hiệu suất với danh sách đảo ngược: Khi sắp xếp danh sách đảo ngược, sort1 hoạt động chậm do phải di chuyển nhiều lần các phần tử lớn về vị trí cuối cùng của danh sách.
+
+
+sort2 uses: Bubble sort
+
+
+How do you know?:
+- Đặc điểm chung: Thuật toán này so sánh từng cặp phần tử liền kề và hoán đổi chúng nếu chúng không đúng thứ tự.
+- Độ phức tạp thời gian: O(n^2), vì cần phải so sánh và hoán đổi nhiều lần.
+- Hiệu suất với danh sách đảo ngược: Khi sắp xếp danh sách đảo ngược, sort2 hoạt động tương đối chậm vì cần nhiều lần hoán đổi.
+
+sort3 uses: Merge sort
+
+How do you know?:
+- Đặc điểm chung: Thuật toán này chia danh sách thành hai phần, sắp xếp từng phần rồi hợp nhất chúng lại với nhau theo đúng thứ tự.
+- Độ phức tạp thời gian: O(n log n), là một thuật toán hiệu quả hơn với danh sách lớn.
+- Hiệu suất với danh sách đảo ngược: Sắp xếp danh sách đảo ngược với sort3 vẫn hoạt động tốt vì thuật toán này không phụ thuộc vào trình tự ban đầu của danh sách.

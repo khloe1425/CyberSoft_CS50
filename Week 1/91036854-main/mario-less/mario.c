@@ -1,5 +1,6 @@
-#include <cs50.h>
 #include <stdio.h>
+#include <cs50.h>
+#include <cs50.c>
 
 int main(void)
 {
@@ -24,7 +25,7 @@ int main(void)
         }
 
         printf("\n");
-    }
+    } 
 
     return 0;
 }
