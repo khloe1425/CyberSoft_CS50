@@ -1,0 +1,4 @@
+Steps to build a pyramid for mario 
+1. prompt user for height 
+2. check height with condition: 1 <= height <= 8
+3. iterate from 1 to height to print hash first, then new line 
