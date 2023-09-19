@@ -34,16 +34,9 @@ void pyramid(int n)
                 printf("#");
             }
         }
-        for (int z = 0; z < n; z++)
+        for (int z = 0; z <= i; z++)
         {
-            if (z <= i)
-            {
-                printf("#");
-            }
-            else 
-            {
-                printf(" ");
-            }
+            printf("#"); 
         }
         printf("\n");
     }
