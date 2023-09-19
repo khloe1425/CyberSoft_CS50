@@ -29,7 +29,7 @@ void left_pyramid(int num)
     }
 }
 
-// TODO: Build a right-aligned pyramid with dots 
+// TODO: Build a right-aligned pyramid 
 void right_pyramid(int num)
 {
     int height = num; 
@@ -39,7 +39,7 @@ void right_pyramid(int num)
         {
             if (((height - 1) - j) > i)
             {
-                printf(".");
+                printf(" ");
             }
             else 
             {
