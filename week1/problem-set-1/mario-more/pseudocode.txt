@@ -1,0 +1,11 @@
+Steps to build a pyramid for mario 
+1. prompt user for height 
+2. check height with condition: 1 <= height <= 8
+3. use 3 loops to print # and space
+    - first loop for rows 
+    - the next 2 loops (inside first loop) for columns 
+        + divide pyramid into 2 sides (left & right)
+            - first loop for left-side pyramid 
+            - second loop for right-side pyramid
+
+    
