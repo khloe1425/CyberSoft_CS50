@@ -17,3 +17,15 @@
 - `segmentation fault` - where a part of memory was touched by your program that is should not have access to
 - `what do they mean "return 0 - return 1", why do we put it there ?` => if we don't put return, the loop is still running.
 - `why return 0 or return 1 ?` => "return 0" - means the code is done. "return 1" - means the code is quite done (such as it's done but it didn't really find what I was looking for)
+--- 
+**Data Structures**\
+<font color="green">**Create your own data types**</font>
+> typedef struct\
+>{\
+>   &nbsp;&nbsp;&nbsp;&nbsp;string name;\
+>   &nbsp;&nbsp;&nbsp;&nbsp;string number;\
+>}\
+> person;
+- `typedef` - define your own type
+- `struct` - structure that has multiple values inside 
+- `person` - name of the data type\ 
