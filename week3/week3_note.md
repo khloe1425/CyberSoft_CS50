@@ -29,3 +29,11 @@
 - `typedef` - define your own type
 - `struct` - structure that has multiple values inside 
 - `person` - name of the data type\ 
+---
+### Sorting
+<font color="green">**Selection sort**</font>
+>for i from 0 to n-1\
+>&nbsp;&nbsp;&nbsp;&nbsp;find smallest number in the range of [i, n-1]\
+>&nbsp;&nbsp;&nbsp;&nbsp;swap smallest number with number[i]
+
+<font color="green">Buble Sort</font>
