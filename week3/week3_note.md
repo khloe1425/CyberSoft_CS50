@@ -36,4 +36,11 @@
 >&nbsp;&nbsp;&nbsp;&nbsp;find smallest number in the range of [i, n-1]\
 >&nbsp;&nbsp;&nbsp;&nbsp;swap smallest number with number[i]
 
-<font color="green">Buble Sort</font>
+<font color="green">**Buble Sort**</font>
+>Repeat n-1 times\
+>&nbsp;&nbsp;&nbsp;&nbsp;for i from 0 to n-2\
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if number[i] & number[i+1] out of order\
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;swap them 
+---
+### Recursion
+A function to call itself.\
