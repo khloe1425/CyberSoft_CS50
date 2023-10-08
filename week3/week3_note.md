@@ -6,11 +6,14 @@
 ---
 ### Running time - big O notation 
 ![time to solve](https://cs50.harvard.edu/x/2023/notes/3/cs50Week3Slide042.png) \
-*Order of running time (the worst - the fastest)*
-1. O(n<sup>2</sup>) - the worst
-2. O(n) - linear search 
-3. O(log n) - binary search
-4. O(1) - the fastest 
+*Table of running time (the worst - the best)*
+| Running time of     | The worst case   | The best case   |
+| ---------------     | ---------------  | --------------- |
+| **Linear Search**   | O(n)             | O(1)            |
+| **Binary Search**   | O(log n)         | O(1)            |
+| **Selection Sort**  | O(n<sup>2</sup>)                   |
+| **Bubble Sort**     | O(n<sup>2</sup>) | O(n)            |
+| **Merge Sort**      | O(n log n)                         |
 ---
 ### Linear Search - Examples 
 <font color="green">**search-string**</font>
@@ -36,11 +39,19 @@
 >&nbsp;&nbsp;&nbsp;&nbsp;find smallest number in the range of [i, n-1]\
 >&nbsp;&nbsp;&nbsp;&nbsp;swap smallest number with number[i]
 
-<font color="green">**Buble Sort**</font>
+<font color="green">**Bubble Sort**</font>
 >Repeat n-1 times\
 >&nbsp;&nbsp;&nbsp;&nbsp;for i from 0 to n-2\
 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if number[i] & number[i+1] out of order\
 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;swap them 
 ---
 ### Recursion
-A function to call itself.\
+- A function to call itself.
+---
+### Merge Sort
+>If only one number\
+>&nbsp;&nbsp;&nbsp;&nbsp;Quit\
+>Else\
+>&nbsp;&nbsp;&nbsp;&nbsp;Sort left half of number\
+>&nbsp;&nbsp;&nbsp;&nbsp;Sort right half of number\
+>&nbsp;&nbsp;&nbsp;&nbsp;Merge sorted halves
