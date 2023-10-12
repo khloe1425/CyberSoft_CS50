@@ -9,11 +9,11 @@
 *Table of running time (the worst - the best)*
 | Running time of     | The worst case   | The best case   |
 | ---------------     | ---------------  | --------------- |
-| **Linear Search**   | O(n)             | O(1)            |
-| **Binary Search**   | O(log n)         | O(1)            |
 | **Selection Sort**  | O(n<sup>2</sup>) (for both)        |
 | **Bubble Sort**     | O(n<sup>2</sup>) | O(n)            |
 | **Merge Sort**      | O(n log n) (for both)              |
+| **Linear Search**   | O(n)             | O(1)            |
+| **Binary Search**   | O(log n)         | O(1)            |
 ---
 ### Linear Search - Examples 
 <font color="green">**search-string**</font>

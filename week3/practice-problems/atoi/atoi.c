@@ -32,8 +32,8 @@ int convert(string input)
     {
         return (input[0] - 48); 
     }
-    
+
     int last_number = input[length - 1] - 48;
-    input[length -1] = '\0';
+    input[length - 1] = '\0';
     return (last_number + 10 * convert(input));
 }
