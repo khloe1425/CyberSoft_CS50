@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <title>Trivia!</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Trivia!</h1>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>Part 1: Multiple Choice </h2>
+            <hr>
+
+            <!-- TODO: Add multiple choice question here -->
+            <h3>Which city is the capital of France?</h3>
+            
+            <button class="btn btn-primary incorrect">Lyon</button>
+            <button class="btn btn-primary incorrect">Marseilles</button>
+            <button class="btn btn-primary incorrect">Toulouse</button>
+            <button class="btn btn-primary incorrect">Nice</button>
+            <button class="btn btn-primary correct">Paris</button>
+            
+            <p id="feedback1"></p>
+        </div>
+
+        <div class="section">
+            <h2>Part 2: Free Response</h2>
+            <hr>
+            <!-- TODO: Add free response question here -->
+            <h3>Which mountain peak is the highest in North America?</h3>
+            
+            <input type="text"></input>
+            <button id="check">Check</button>
+            
+            <p id="feedback2"></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
