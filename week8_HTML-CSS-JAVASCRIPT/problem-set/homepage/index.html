@@ -1,189 +1,419 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="The DNAnalyzer site
-  provides an overview on DNAnalyzer, an open-source project dedicated to making DNA analysis free and accessible to all." />
-    <meta property="og:title" content="DNAnalyzer" />
-    <meta property="og:image"
-        content="https://user-images.githubusercontent.com/96280466/186224441-46dd2029-b9dc-4b3d-aad8-bfd1e1e62f2e.png" />
-    <meta name="twitter:title" content="DNAnalyzer" />
-    <title>DNAnalyzer</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
 
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
 
-    <link rel="icon" type="image/png" href="./assets/icons/favicon.ico" />
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" sizes="57x57" href="./assets/icons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./assets/icons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./assets/icons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./assets/icons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./assets/icons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./assets/icons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./assets/icons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./assets/icons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon-180x180.png">
+    <!-- BS5 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
 
-    <link rel="icon" type="image/png" href="./assets/icons/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="./assets/icons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="./assets/icons/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="./assets/icons/android-chrome-192x192.png" sizes="192x192">
+    <!-- Style css -->
+    <link rel="stylesheet" href="./css/style.min.css" />
 
-    <meta name="msapplication-square70x70logo" content="./assets/icons/smalltile.png" />
-    <meta name="msapplication-square150x150logo" content="./assets/icons/mediumtile.png" />
-    <meta name="msapplication-wide310x150logo" content="./assets/icons/widetile.png" />
-    <meta name="msapplication-square310x310logo" content="./assets/icons/largetile.png" />
-</head>
-
-<body>
-    <div class="alert">
-        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-        This site is still under development. A lot of features have not been added, and some content is missing from
-        the website. Please be patient as we roll out changes over the next couple of weeks.
+    <title>MY PERSONAL PORTFOLIO</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="navMenu">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">KN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#resume">Resume</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
     </div>
 
-    <div class="container">
-        <h1 class="text-center primary-dark">DNAnalyzer</h1>
-        <span class="secondary-dark">A highly efficient, powerful, and feature-rich algorithm for analyzing DNA
-            sequences</span>
+    <!-- HOME -->
+    <div class="home">
+      <div class="container">
+        <div class="row">
+          <div class="home__left col-6">
+            <h2 class="home__name">
+              <a href="./index.html">Thi-Kim-Ngan LE</a>
+            </h2>
+            <h5 class="home__text">
+              I'm a passionate <span>Front-end Developer</span>
+            </h5>
 
-        <div class="grid">
-            <div class="item bg-light">
-                <div class="flex">
-                    <h2 class="primary-dark">Introduction</h2>
-                    <p class="secondary-dark text-center">DNAnalyzer identifies proteins, amino acids, start and stop
-                        codons, high coverage regions, regions susceptible to neurodevelopmental disorders,
-                        transcription factors, and regulatory elements. Researchers are working to extract valuable
-                        information from such software to better understand human health and disease. Currently, we have
-                        a Command-Line-Interface (CLI) and are working on a Graphical User Interface (GUI) that will
-                        enable physicians to quickly and more easily interact with the software, enabling them to
-                        identify genetic mutations that may cause disease.</p>
-                </div>
-            </div>
-
-            <div class="item bg-light">
-                <div class="flex">
-                    <h2 class="primary-dark">Background</h2>
-                    <p class="secondary-dark text-center">The human genome is composed of over 3 billion base pairs,
-                        making human analysis nearly impossible. Consequently, using powerful computational and
-                        statistical methods to decode the functional information hidden in DNA sequences are
-                        necessary. The genome is also extremely intricate and contains a plethora of data, which
-                        need to be organized and converted into analyzable data appropriately. Current analytical
-                        tools and software make it arduous for both geneticists and physicians to do so, thus
-                        restricting them from acquiring crucial information to better understand humans.</p>
-                </div>
-            </div>
-
-            <div class="item bg-light">
-                <div class="flex" id="features">
-                    <h2 class="primary-dark" style="text-align: left; width: 100%">Features</h2>
-                    <div class="feature">
-                        <h2 class="term">Start and Stop Codons</h2>
-                        <p class="definition">Indicate the start and stop of a protein. There are 20 different amino
-                            acids.
-                            A protein consists of one or more chains of amino acids (called polypeptides) whose sequence
-                            is
-                            encoded in a gene. <code>2</code>
-                        </p>
-                    </div>
-
-                    <div class="feature">
-                        <h2 class="term">High Coverage Regions</h2>
-                        <p class="definition">Regions of a DNA genome that code for a protein and have a relatively high
-                            proportion of guanine and cytosine nucleotides to the 4 nucleotide bases (45-60%
-                            GC-content).
-                            These regions are likely to contain important information about the genome. <code>3</code>
-                        </p>
-                    </div>
-
-                    <div class="feature">
-                        <h2 class="term">Neurodevelopmental Disorders</h2>
-                        <p class="definition">A group of disorders, usually characterized by longer genes, that affect
-                            the
-                            development of the brain and nervous
-                            system. These disorders are caused by genetic mutations that affect the development of the
-                            brain and nervous system. These disorders include autism, attention deficit hyperactivity
-                            disorder (ADHD), and schizophrenia. <code>4</code>
-                        </p>
-                    </div>
-
-                    <div class="feature">
-                        <h2 class="term">Transcription Factors</h2>
-                        <p class="definition">A protein that binds to DNA and regulates the transcription of genes.
-                            These
-                            proteins are responsible for the regulation of gene expression. They are involved in the
-                            regulation of gene expression by binding to specific DNA sequences and regulating the
-                            transcription of genes. <code>6</code>
-                        </p>
-                    </div>
-
-                    <!--
-                <div class="feature">
-                    <h2 class="term">Regulatory Elements</h2>
-                    <p class="definition">A sequence of DNA that controls the transcription of a gene. These sequences
-                        are located upstream of the gene and are responsible for the regulation of gene expression.
-                        They are involved in the regulation of gene expression by binding to specific DNA sequences
-                        and regulating the transcription of genes. <code>7</code>
-                    </p>
-                </div>
-                -->
-
-                    <div class="feature">
-                        <h2 class="term">FASTA Files (.fa & .fab)</h2>
-                        <p class="definition">A text-based file format used to store DNA sequences format that
-                            stores the DNA sequence and its associated metadata. Supports multi-line and single-line
-                            FASTA
-                            database files. Files can either be uploaded or linked to from the web.<code>7</code>
-                        </p>
-                    </div>
-
-                    <div class="feature">
-                        <h2 class="term">Command-Line-Interface</h2>
-                        <p class="definition">The Methionine command-line interface (abbreviated as Met CLI) is a
-                            unified
-                            tool for running DNAnalyzer services from the command-line. The CLI is a powerful tool for
-                            using
-                            DNAnalyzer services and scripting a sequence of commands to execute. You can currently
-                            access
-                            all the core features present in DNAnalyzer without having to log in, although account
-                            support
-                            will be implemented soon.
-                        </p>
-                    </div>
-
-                    <div class="feature">
-                        <h2 class="term">Graphical User Interface</h2>
-                        <p class="definition">A cross-platform JavaFX application that performs the same functions as
-                            the
-                            CLI, but with a graphical user interface. However, the GUI is still under development and
-                            the
-                            Met CLI continues to be the primary method of using DNAnalyzer. Currently, the following
-                            features are available in the GUI:
-                        <ul id="gui-features">
-                            <li id="gui-li">Set name of DNA file to analyze</li>
-                            <li id="gui-li">Set minimum and maximum number of reading frames</li>
-                            <li id="gui-li">Run analysis</li>
-                            <li id="gui-li">View results</li>
-                        </ul>
-                        </p>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <div class="home__right col-6">
+            <img src="./img/undraw_blooming_re_2kc4.svg" alt="blooming girl">
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div id="redirect-button">
-            <button class="button" onclick=window.location.href="https://github.com/Verisimilitude11/DNAnalyzer">GitHub
-                Repository</button>
+    <!-- ABOUT -->
+    <section class="about section-show" id="about">
+      <div class="container">
+        <!-- About Me -->
+        <div class="aboutMe">
+          <div class="aboutMe__title">
+            <h2 class="title">about</h2>
+            <p class="text">learn more about me</p>
+          </div>
+          <div class="aboutMe__info">
+            <div class="row">
+              <div class="col-4 info__photo">
+                <img src="./img/undraw_female_avatar_efig.svg" alt="avatar" />
+              </div>
+              <div class="col-8 info__content">
+                <h3 class="info__title">Front-end Developer</h3>
+                <p class="info__text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Ipsam dicta quibusdam dolore laborum accusantium quidem.
+                </p>
+                <div class="info__perso row">
+                  <div class="col-6">
+                    <ul>
+                      <li>
+                        <i class="fa fa-chevron-right"></i>
+                        <strong>Birthday: </strong>
+                        <span>29 November</span>
+                      </li>
+                      <li>
+                        <i class="fa fa-chevron-right"></i>
+                        <strong>Website: </strong>
+                        <span>Lorem ipsum dolor sit amet.</span>
+                      </li>
+                      <li>
+                        <i class="fa fa-chevron-right"></i>
+                        <strong>Phone: </strong>
+                        <span>+84 12 58 12 45 15</span>
+                      </li>
+                      <li>
+                        <i class="fa fa-chevron-right"></i>
+                        <strong>City: </strong>
+                        <span>Ho Chi Minh City</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-6">
+                    <ul>
+                      <li>
+                        <i class="fa fa-chevron-right"></i>
+                        <strong>Age: </strong>
+                        <span>25</span>
+                      </li>
+                      <li>
+                        <i class="fa fa-chevron-right"></i>
+                        <strong>Degree: </strong>
+                        <span>Bachelor</span>
+                      </li>
+                      <li>
+                        <i class="fa fa-chevron-right"></i>
+                        <strong>Email: </strong>
+                        <span>ngan.kim@gmail.com</span>
+                      </li>
+                      <li>
+                        <i class="fa fa-chevron-right"></i>
+                        <strong>Freelance: </strong>
+                        <span>Available</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="info__present">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Explicabo, fuga? Corporis placeat exercitationem eligendi
+                  expedita quidem, fuga cum modi quo, maxime esse ullam
+                  cupiditate non excepturi earum accusamus! Rem neque nihil,
+                  odio non voluptatum nam debitis libero! Id reprehenderit, enim
+                  sit beatae dolore culpa, facere eveniet reiciendis dicta
+                  maiores laudantium.
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- End of About Me -->
 
-        <br>
-        <br>
+        <!-- Skills -->
+        <div class="skills">
+          <div class="skills__title">
+            <h2 class="title">skills</h2>
+          </div>
+          <div class="skills__content">
+            <div class="row">
+              <div class="col-6">
+                <div class="skills__info">
+                  <div class="skills__name">
+                    <p>html</p>
+                    <p>95%</p>
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="html" aria-valuenow="100" aria-valuemin="0" aria-valuemax="95">
+                    <div class="progress-bar" style="width: 95%;"></div>
+                  </div>
+                </div>
+                <div class="skills__info">
+                  <div class="skills__name">
+                    <p>css</p>
+                    <p>75%</p>
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="css" aria-valuenow="100" aria-valuemin="0" aria-valuemax="75">
+                    <div class="progress-bar w-75"></div>
+                  </div>
+                </div>
+                <div class="skills__info">
+                  <div class="skills__name">
+                    <p>JavaScript</p>
+                    <p>75%</p>
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="javascript" aria-valuenow="100" aria-valuemin="0" aria-valuemax="75">
+                    <div class="progress-bar w-75"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="skills__info">
+                  <div class="skills__name">
+                    <p>photoshop</p>
+                    <p>75%</p>
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="photoshop" aria-valuenow="100" aria-valuemin="0" aria-valuemax="75">
+                    <div class="progress-bar w-75"></div>
+                  </div>
+                </div>
+                <div class="skills__info">
+                  <div class="skills__name">
+                    <p>reactjs</p>
+                    <p>75%</p>
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="reactjs" aria-valuenow="100" aria-valuemin="0" aria-valuemax="75">
+                    <div class="progress-bar w-75"></div>
+                  </div>
+                </div>
+                <div class="skills__info">
+                  <div class="skills__name">
+                    <p>ui - ux</p>
+                    <p>75%</p>
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="uiux" aria-valuenow="100" aria-valuemin="0" aria-valuemax="75">
+                    <div class="progress-bar w-75"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Skills -->
 
-</body>
+        <!-- Interest -->
+        <div class="interest">
+          <div class="interest__title">
+            <h2 class="title">interests</h2>
+          </div>
+          <div class="interest__content">
+            <div class="interest__item">
+              <div class="item__box">
+                <i class="fa fa-running" style="color: #D61355;"></i>
+                <span>Lorem ipsum</span>
+              </div>
+            </div>
+            <div class="interest__item">
+              <div class="item__box">
+                <i class="fa fa-book" style="color: #FCE700;"></i>
+                <span>Lorem ipsum</span>
+              </div>
+            </div>
+            <div class="interest__item">
+              <div class="item__box">
+                <i class="fa fa-camera-retro" style="color: #AB46D2;"></i>
+                <span>Lorem ipsum</span>
+              </div>
+            </div>
+            <div class="interest__item">
+              <div class="item__box">
+                <i class="fa fa-carrot" style="color: #FFAB76;"></i>
+                <span>Lorem ipsum</span>
+              </div>
+            </div>
+            <div class="interest__item">
+              <div class="item__box">
+                <i class="fa fa-cat" style="color: #1CC5DC;"></i>
+                <span>Lorem ipsum</span>
+              </div>
+            </div>
+            <div class="interest__item">
+              <div class="item__box">
+                <i class="fa fa-coffee" style="color: #98DDCA;"></i>
+                <span>Lorem ipsum</span>
+              </div>
+            </div>
+            <div class="interest__item">
+              <div class="item__box">
+                <i class="fab fa-figma" style="color: #EF4F4F;"></i>
+                <span>Lorem ipsum</span>
+              </div>
+            </div>
+            <div class="interest__item">
+              <div class="item__box">
+                <i class="fa fa-glass-martini-alt" style="color: #F3D1F4;"></i>
+                <span>Lorem ipsum</span>
+              </div>
+            </div>
+            <div class="interest__item">
+              <div class="item__box">
+                <i class="fa fa-hand-holding-heart" style="color: #8DED8E;"></i>
+                <span>Lorem ipsum</span>
+              </div>
+            </div>
+            <div class="interest__item">
+              <div class="item__box">
+                <i class="fab fa-itunes-note" style="color: #E67FA2;"></i>
+                <span>Lorem ipsum</span>
+              </div>
+            </div>
+            <div class="interest__item">
+              <div class="item__box">
+                <i class="fa fa-laptop-code" style="color: #FFEFA1;"></i>
+                <span>Lorem ipsum</span>
+              </div>
+            </div>
+            <div class="interest__item">
+              <div class="item__box">
+                <i class="fa fa-palette" style="color: #118DF0;"></i>
+                <span>Lorem ipsum</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Interest -->
+      </div>
+    </section>
 
+    <!-- RESUME -->
+    <section class="resume section-show" id="resume">
+      <div class="container">
+        <div class="myResume">
+          <div class="myResume__title">
+            <h2 class="title">resume</h2>
+            <p class="text">check my resume</p>
+          </div>
+          <div class="myResume__info">
+            <div class="row">
+              <div class="col-6">
+                <h3 class="topic">summary</h3>
+                <div class="myResume__item">
+                  <h4 class="item__title">Lorem ipsum</h4>
+                  <p class="item__text">
+                    <em>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci minima doloribus vero quia consequatur minus nemo nulla ipsum fuga delectus!</em>
+                  </p>
+                  <ul class="item__list">
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                  </ul>
+                </div>
+                <h3 class="topic">education</h3>
+                <div class="myResume__item">
+                  <h4 class="item__title">Lorem ipsum</h4>
+                  <h5 class="item__year">2018 - 2019</h5>
+                  <p class="item__text">
+                    <em>Lorem ipsum dolor sit amet.</em>
+                  </p>
+                  <p class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dignissimos ipsum modi voluptatem voluptas corporis. Consequuntur officiis facilis labore vel!</p>
+                </div>
+                <div class="myResume__item">
+                  <h4 class="item__title">Lorem ipsum</h4>
+                  <h5 class="item__year">2018 - 2019</h5>
+                  <p class="item__text">
+                    <em>Lorem ipsum dolor sit amet.</em>
+                  </p>
+                  <p class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dignissimos ipsum modi voluptatem voluptas corporis. Consequuntur officiis facilis labore vel!</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <h3 class="topic">professional experience</h3>
+                <div class="myResume__item">
+                  <h4 class="item__title">Lorem ipsum</h4>
+                  <h5 class="item__year">2018 - 2019</h5>
+                  <p class="item__text">
+                    <em>Lorem ipsum dolor sit amet.</em>
+                  </p>
+                  <ul class="item__list">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, iste!</li>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nulla dolore? Accusantium.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ipsa, consequuntur minima assumenda sed omnis!</li>
+                  </ul>
+                </div>
+                <div class="myResume__item">
+                  <h4 class="item__title">Lorem ipsum</h4>
+                  <h5 class="item__year">2018 - 2019</h5>
+                  <p class="item__text">
+                    <em>Lorem ipsum dolor sit amet.</em>
+                  </p>
+                  <ul class="item__list">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, iste!</li>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti error iste sit nulla reiciendis ut fugiat!</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+
+    <!-- PORTFOLIO -->
+
+    <!-- CONTACT -->
+
+
+    <!-- BS5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="./js/main.js"></script>
+  </body>
 </html>
