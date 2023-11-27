@@ -1,0 +1,1 @@
+##### This simple extension helps us to change color of chrome tabs.
