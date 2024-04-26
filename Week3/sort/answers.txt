@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Tasks 4.85s to sort reversed list; Tasks 0.54s to sort sorted list
+
+sort2 uses: Merge Sort
+
+How do you know?: Tasks 0.45s to sort reversed list; Tasks 0.49s to sort sorted list
+
+sort3 uses: Selection Sort
+
+How do you know?: Tasks 2.59s to sort reversed list; Tasks 2.34s to sort sorted list
